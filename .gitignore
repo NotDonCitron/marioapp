@@ -371,3 +371,4 @@ FodyWeavers.xsd
 # Temporary files
 *.tmp
 *.temp
+.env

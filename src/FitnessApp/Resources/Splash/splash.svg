@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="456" height="456" viewBox="0 0 456 456">
+  <rect width="456" height="456" fill="#FF6B35"/>
+  <g transform="translate(128, 128)">
+    <!-- Dumbbell Icon -->
+    <rect x="80" y="80" width="40" height="120" rx="8" fill="white"/>
+    <circle cx="80" cy="80" r="30" fill="white"/>
+    <circle cx="140" cy="80" r="30" fill="white"/>
+    <circle cx="80" cy="200" r="30" fill="white"/>
+    <circle cx="140" cy="200" r="30" fill="white"/>
+    
+    <!-- App Name -->
+    <text x="110" y="260" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">FITNESS</text>
+    <text x="110" y="285" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">TRACKER</text>
+  </g>
+</svg>

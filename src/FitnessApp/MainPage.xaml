@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="FitnessApp.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Fitness Tracker">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+            
+            <!-- Header -->
+            <Label Text="🏋️ Fitness Tracker" 
+                   FontSize="28" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            
+            <!-- Daily Stats Card -->
+            <Frame BackgroundColor="LightGray" Padding="16" CornerRadius="8">
+                <StackLayout Spacing="15">
+                    <Label Text="Today's Progress" 
+                           FontSize="18" 
+                           FontAttributes="Bold" />
+                    
+                    <Grid ColumnDefinitions="*,*,*">
+                        <!-- Steps -->
+                        <StackLayout Grid.Column="0" HorizontalOptions="Center">
+                            <Label Text="👟" FontSize="24" HorizontalOptions="Center" />
+                            <Label x:Name="StepsLabel" Text="0" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                            <Label Text="Steps" FontSize="12" HorizontalOptions="Center" />
+                        </StackLayout>
+                        
+                        <!-- Calories -->
+                        <StackLayout Grid.Column="1" HorizontalOptions="Center">
+                            <Label Text="🔥" FontSize="24" HorizontalOptions="Center" />
+                            <Label x:Name="CaloriesLabel" Text="0" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                            <Label Text="Calories" FontSize="12" HorizontalOptions="Center" />
+                        </StackLayout>
+                        
+                        <!-- Distance -->
+                        <StackLayout Grid.Column="2" HorizontalOptions="Center">
+                            <Label Text="📍" FontSize="24" HorizontalOptions="Center" />
+                            <Label x:Name="DistanceLabel" Text="0.0" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                            <Label Text="km" FontSize="12" HorizontalOptions="Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            
+            <!-- Quick Actions -->
+            <Frame BackgroundColor="LightGray" Padding="16" CornerRadius="8">
+                <StackLayout Spacing="15">
+                    <Label Text="Quick Actions" 
+                           FontSize="18" 
+                           FontAttributes="Bold" />
+                    
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="10" RowSpacing="10">
+                        <Button Grid.Row="0" Grid.Column="0"
+                                Text="🏃 Start Workout"
+                                BackgroundColor="Orange"
+                                TextColor="White"
+                                Clicked="OnStartWorkoutClicked" />
+                        
+                        <Button Grid.Row="0" Grid.Column="1"
+                                Text="📊 View Stats"
+                                BackgroundColor="LightBlue"
+                                Clicked="OnViewStatsClicked" />
+                        
+                        <Button Grid.Row="1" Grid.Column="0"
+                                Text="🎯 Set Goals"
+                                BackgroundColor="LightBlue"
+                                Clicked="OnSetGoalsClicked" />
+                        
+                        <Button Grid.Row="1" Grid.Column="1"
+                                Text="⚙️ Settings"
+                                BackgroundColor="LightBlue"
+                                Clicked="OnSettingsClicked" />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            
+            <!-- Add Activity Button -->
+            <Button Text="➕ Add Activity"
+                    BackgroundColor="Orange"
+                    TextColor="White"
+                    Clicked="OnAddActivityClicked"
+                    Margin="0,10,0,20" />
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

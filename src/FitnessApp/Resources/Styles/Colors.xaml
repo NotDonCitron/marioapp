@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-stylesheet href="../Styles.xaml" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Fitness App Color Scheme -->
+    <Color x:Key="Primary">#FF6B35</Color>
+    <Color x:Key="Secondary">#4ECDC4</Color>
+    <Color x:Key="Tertiary">#45B7D1</Color>
+    <Color x:Key="Success">#28A745</Color>
+    <Color x:Key="Warning">#FFC107</Color>
+    <Color x:Key="Danger">#DC3545</Color>
+    <Color x:Key="Info">#17A2B8</Color>
+    
+    <!-- Base Colors -->
+    <Color x:Key="White">White</Color>
+    <Color x:Key="Black">Black</Color>
+    
+    <!-- Gray Scale -->
+    <Color x:Key="Gray100">#F8F9FA</Color>
+    <Color x:Key="Gray200">#E9ECEF</Color>
+    <Color x:Key="Gray300">#DEE2E6</Color>
+    <Color x:Key="Gray400">#CED4DA</Color>
+    <Color x:Key="Gray500">#ADB5BD</Color>
+    <Color x:Key="Gray600">#6C757D</Color>
+    <Color x:Key="Gray700">#495057</Color>
+    <Color x:Key="Gray800">#343A40</Color>
+    <Color x:Key="Gray900">#212529</Color>
+    <Color x:Key="Gray950">#0D1117</Color>
+
+</ResourceDictionary>
